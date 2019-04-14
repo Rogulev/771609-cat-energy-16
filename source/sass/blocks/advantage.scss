@@ -14,7 +14,7 @@
 }
 
 .advantage__list {
-  width: 280px;
+  min-width: 280px;
   list-style: none;
   padding-left: 20px;
   padding-right: 20px;
@@ -24,25 +24,52 @@
 .advantage__item {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-content: center;
+  align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   min-height: 60px;
   line-height: 18px;
   font-size: 14px;
   margin-bottom: 20px;
-
+/*
   &::before {
     content:"";
     display: block;
     width: 60px;
     height: 60px;
     background-color: $master-color;
-
   }
+
+  &--usefully::before {
+    background-image: url("../../img/advantage-leaf@1x.png");
+    background-position: center;
+  }
+
+  &--powder::before {
+    background-image: url("../../img/advantage-powder@1x.png");
+    background-position: center;
+  }
+
+  &--change::before {
+    background-image: url("../../img/advantage-dining@1x.png");
+    background-position: center;
+  }
+
+  &--time::before {
+    background-image: url("../../img/advantage-clock@1x.png");
+    background-position: center;
+  }*/
+}
+
+.advantage__wrapper-icon {
+  width: 60px;
+  height: 60px;
+  background-color: $master-color;
+  justify-content: center;
 }
 
 .advantage__description {
-  width: 200px;
+  min-width: 200px;
+  /*padding-left: 20px;*/
   margin: 0;
+  margin-left: 20px;
 }

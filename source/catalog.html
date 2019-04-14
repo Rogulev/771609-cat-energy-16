@@ -4,6 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
@@ -12,16 +16,19 @@
   <div class="wrapper">
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Cat Energy">
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Cat Energy" width="190px" height="40px">
+      </picture>
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть список</button>
+    <nav class="main-nav  main-nav--closed">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть список</span></button>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item-active">
+        <li class="site-list__item">
           <a href="index.html" class="navigation__link">Главная</a>
         </li>
-        <li class="site-list__item site-list__item-active">
-          <a href="#" class="navigation__link navigation__link--active">Каталог продукции</a>
+        <li class="site-list__item site-list__item--active">
+          <a class="navigation__link navigation__link--active">Каталог продукции</a>
         </li>
         <li class="site-list__item">
           <a href="form.html" class="navigation__link">Подбор программы</a>
@@ -29,6 +36,7 @@
       </ul>
     </nav>
   </header>
+
   <main class="page-main">
     <h1 class="page-main__title">Каталог продукции</h1>
     <section class="catalog">
