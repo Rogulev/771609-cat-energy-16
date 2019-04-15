@@ -83,6 +83,9 @@
 @media (min-width: $tablet-width) {
 
   .advantage__head {
+    margin-top: 25px;
+    margin-left: 30px;
+    margin-bottom: 70px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -91,17 +94,25 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .advantage__item {
     display: block;
     width: 46%;
     min-height: 230px;
+    margin-bottom: 85px;
+
+    &:nth-last-child(1),
+     :nth-last-child(2) {
+       margin-bottom: 60px;
+     }
 
     &::before {
       width: 80px;
       height: 80px;
-      margin-bottom: 25px;
+      margin-bottom: 35px;
     }
   }
 

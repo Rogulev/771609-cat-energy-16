@@ -6,8 +6,6 @@
 
 .categories__item {
   min-width: 280px;
-  /*min-height: 265px;*/
-
   background-color: #f2f2f2;
   list-style: none;
   padding-bottom: 21px;
@@ -61,20 +59,66 @@
 
 @media (min-width: $tablet-width) {
 
+  .categories__list {
+    margin-bottom: 50px;
+  }
+
   .categories__item {
-    /*min-height: 370px;*/
     padding-left: 52px;
+    padding-bottom: 60px;
     margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+
+/*
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 60px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: $master-color;
+    }*/
   }
 
   .categories__item-title {
     font-size: 36px;
     line-height: 37px;
+    padding-top: 75px;
+    padding-left: 0;
+    margin-bottom: 25px;
     text-align: left;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 60px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: $master-color;
+    }
   }
 
   .categories__item-description {
     font-size: 16px;
+    margin-left: 0;
+    margin-bottom: 35px;
     line-height: 24px;
+    width: 57%;
+    border:none;
+  }
+
+  .categories-up__item-description {
+    width: 52%;
+  }
+
+  .categories__link {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 0;
   }
 }
