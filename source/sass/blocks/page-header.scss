@@ -73,10 +73,16 @@
 }
 
 @media (min-width: $tablet-width) {
+
+  .page-header__logo-image {
+    width:192px;
+    height: 60px;
+  }
+
   .page-header {
     flex-direction: row;
     justify-content: space-between;
-    width: 708px;
+    min-width: 708px;
     padding-right: 30px;
     padding-left: 30px;
   }

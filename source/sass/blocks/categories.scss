@@ -6,10 +6,11 @@
 
 .categories__item {
   min-width: 280px;
-  min-height: 265px;
+  /*min-height: 265px;*/
 
   background-color: #f2f2f2;
   list-style: none;
+  padding-bottom: 21px;
   margin: 0 20px 20px 20px;
 }
 
@@ -22,6 +23,17 @@
   padding-left: 90px;
   margin-top: 0;
   margin-bottom: 30px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $master-color;
+  }
 }
 
 .categories__item--diet::before {
@@ -50,7 +62,7 @@
 @media (min-width: $tablet-width) {
 
   .categories__item {
-    min-height: 370px;
+    /*min-height: 370px;*/
     padding-left: 52px;
     margin-right: 30px;
   }
