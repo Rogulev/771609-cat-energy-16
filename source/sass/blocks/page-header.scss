@@ -120,3 +120,37 @@
     font-weight: 400;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding-left: 110px;
+    padding-right: 110px;
+    margin-top: 30px;
+  }
+
+  .main-nav {
+      &::after {
+      content: "";
+      background-image: url(../../img/index-background-desktop@1x.jpg);
+      width: 720px;
+      height: 695px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+
+    }
+  }
+
+  .site-list {
+    font-size: 20px;
+  }
+
+  .navigation__link {
+    color: red;
+
+    &--active {
+      border-bottom: 2px solid #ffffff;
+    }
+  }
+}

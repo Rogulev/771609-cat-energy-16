@@ -109,3 +109,31 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+
+  .food-programm {
+    margin-left: 190px;
+    padding-left: 0;
+    background-image: none;
+  }
+
+  .food-programm__image {
+    display: block;
+    position: absolute;
+    right: 330px;
+  }
+
+  .food-programm__slogan{
+    margin-top: 80px;
+    padding-left: 0;
+  }
+
+  .food-programm__intro {
+    margin-bottom: 55px;
+    padding-left: 0;
+  }
+
+  .food-programm__search {
+    margin-left: 0;
+  }
+}
