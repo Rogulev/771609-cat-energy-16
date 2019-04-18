@@ -91,7 +91,7 @@
     margin-bottom: 25px;
     text-align: left;
 
-    &::before {
+    &::after {
       content: "";
       display: block;
       position: absolute;
@@ -120,5 +120,31 @@
     font-size: 20px;
     line-height: 20px;
     padding-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories__list {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-bottom: 40px;
+  }
+
+  .categories__item {
+    margin-left: 0;
+    margin-right: 0;
+    width: 42.5%;
+  }
+
+  .categories__item-title {
+    margin-left: 160px;
+    margin-bottom: 75px;
+  }
+
+  .categories__item-description {
+    width: 95%;
+    margin-bottom: 15px;
   }
 }

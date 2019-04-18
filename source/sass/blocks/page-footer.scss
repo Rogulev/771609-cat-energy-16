@@ -7,9 +7,24 @@
 }
 
 .page-footer__logo {
-  border-bottom: 1px solid #e6e6e6;
+  padding-top: 35px;
+  padding-bottom: 25px;
+  text-align: center;
+  width: 85%;
+  border-bottom: 2px solid #e6e6e6;
 }
 
 .page-footer__social {
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 2px solid #e6e6e6;
+}
+
+.social__list {
+  list-style: none;
+  display: flex;
+}
+
+.copyright__text {
+  font-size: 16px;
+  line-height: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }

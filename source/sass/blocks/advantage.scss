@@ -120,5 +120,23 @@
     max-width: 250px;
     font-size: 16px;
     line-height: 24px;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantage__head {
+    margin-left: 110px;
+  }
+
+  .advantage__list {
+    padding: 0;
+    margin-left: 110px;
+    margin-right: 110px;
+    flex-direction: row;
+  }
+
+  .advantage__item {
+    width: 20%;
   }
 }
