@@ -58,7 +58,6 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
-  background-color: #ffffff;
   border-top: 1px solid #e6e6e6;
 }
 
@@ -143,11 +142,16 @@
   }
 
   .site-list {
+    line-height: 25px;
+    width: 480px;
+  }
+
+  .site-list__item {
     font-size: 20px;
   }
 
   .navigation__link {
-    color: red;
+    color: #ffffff;
 
     &--active {
       border-bottom: 2px solid #ffffff;

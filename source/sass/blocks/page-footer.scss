@@ -21,6 +21,14 @@
 .social__list {
   list-style: none;
   display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  width: 85%;
+}
+
+.social__item {
+  min-height: 60px;
 }
 
 .copyright__text {
