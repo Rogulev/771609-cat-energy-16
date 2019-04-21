@@ -127,7 +127,7 @@
     margin-top: 30px;
   }
 
-  .main-nav {
+  .main-nav__image {
       &::after {
       content: "";
       background-image: url(../../img/index-background-desktop@1x.jpg);
@@ -137,7 +137,14 @@
       top: 0;
       right: 0;
       z-index: -1;
+    }
 
+    .navigation__link {
+      color: #ffffff;
+
+      &--active {
+        border-bottom: 2px solid #ffffff;
+      }
     }
   }
 
@@ -150,11 +157,11 @@
     font-size: 20px;
   }
 
-  .navigation__link {
-    color: #ffffff;
+  .navigation__link {/*
+    color: #ffffff;*/
 
     &--active {
-      border-bottom: 2px solid #ffffff;
+      border-bottom: 2px solid $master-color;
     }
   }
 }
