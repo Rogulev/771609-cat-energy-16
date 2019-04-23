@@ -49,12 +49,38 @@
 }
 
 .categories__link {
+  position: relative;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
-  padding: 20px 13px 20px 20px;
+  padding: 0 13px 0 20px;
+  z-index: 1;
+  background-color: #f2f2f2;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../../img/icon-right-arrow-verylong.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 37px;
+    height: 12px;
+    z-index: -1;
+    top: calc(50% - 12px / 2);
+    transition-property: transform;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      transform: translateX(20px);
+    }
+  }
+
 }
 
 @media (min-width: $tablet-width) {
