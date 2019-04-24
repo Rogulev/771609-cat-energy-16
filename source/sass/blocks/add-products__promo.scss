@@ -1,4 +1,4 @@
-.promo-link {
+/*.promo-link {
   padding: 65px 55px 45px 55px;
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -15,14 +15,21 @@
     height: 60px;
   }
 }
+*/
 
-.promo-title {
+.add-products__promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 290px;
+  width: 100%;
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-color: $master-color;
+}
+
+.promo-text {
   margin-top: 65px;
   margin-bottom: 0;
   width: 100%;
-}
-
-.add-products__promo {
-
-
 }

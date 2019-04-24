@@ -28,3 +28,48 @@ border-collapse: collapse;
 .extra__item-info td:last-child {
   text-align: right;
 }
+
+@media (min-width: $tablet-width) {
+
+  .extra__item {
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-bottom: 26px;
+    border: 1px solid #cdcdcd;
+    border-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &:last-child {
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
+
+  .extra__item-info {
+    font-size: 16px;
+    line-height: 20px;
+    width: 290px;
+    margin-top: 30px;
+    text-align: right;
+    padding: 0;
+  }
+
+  .extra__item-info td {
+    padding: 0;
+  }
+
+  .extra__item-info td:last-child {
+    width: 95px;
+  }
+
+  .extra__item-title {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 25px;
+    margin-bottom: 26px;
+    width: 170px;
+  }
+}
+

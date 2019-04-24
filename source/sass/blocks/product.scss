@@ -122,6 +122,7 @@
   .product__item {
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
   }
 
   .product__item-name {
@@ -156,11 +157,11 @@
     padding: 7px 0;
     border-bottom: 1px solid #cdcdcd;
   }
-
+/*
   .button__product {
     margin-top: 35px;
   }
-
+*/
   .product__item-more {
     margin-top: 140px;
   }
