@@ -1,6 +1,7 @@
 .product__item {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 22px;
 }
 
 .product__item-name {
@@ -36,7 +37,6 @@
   font-size: 16px;
   padding-top: 12px;
   padding-bottom: 11px;
-  margin-top: 22px;
   width: 100%;
 }
 

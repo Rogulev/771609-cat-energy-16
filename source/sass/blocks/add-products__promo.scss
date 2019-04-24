@@ -1,0 +1,28 @@
+.promo-link {
+  padding: 65px 55px 45px 55px;
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 289px;
+  box-sizing: border-box;
+  display: flex;
+
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../../img/icon-gift.svg");
+    width: 55px;
+    height: 60px;
+  }
+}
+
+.promo-title {
+  margin-top: 65px;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.add-products__promo {
+
+
+}
