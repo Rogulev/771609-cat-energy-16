@@ -61,3 +61,28 @@
     background-image: url("../../img/gift-photo-tablet@1x.jpg");
   }
 }
+
+@media (min-width: $desktop-width) {
+
+  .add-products {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .add-products__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .add-products__promo {
+    min-height: 290px;
+    margin-top: 0;
+    width: 20%;
+    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+    background-size: cover;
+  }
+
+  .add-products__title {
+    padding-left: 0;
+  }
+}

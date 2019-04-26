@@ -73,3 +73,35 @@ border-collapse: collapse;
   }
 }
 
+@media (min-width: $desktop-width) {
+
+  .extra {
+    margin: 0;
+    width: 73%;
+  }
+
+  .extra__list {
+    margin: 0;
+  }
+
+  .extra__item {
+    flex-wrap: nowrap;
+    align-items: center;
+    min-height: 70px;
+    padding: 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  .extra__item .button__product {
+    width: 27%
+  }
+
+  .extra__item-title {
+    margin: 0;
+  }
+
+  .extra__item-info {
+    margin: 0;
+  }
+}
