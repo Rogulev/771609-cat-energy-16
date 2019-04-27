@@ -1,0 +1,124 @@
+.extra__list {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.extra__item {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.extra__item-title {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 14px;
+  margin-bottom: 10px;
+}
+
+.extra__item-info {
+font-size: 14px;
+line-height: 14px;
+margin-bottom: 14px;
+font-family: Arial, Helvetica, sans-serif;
+width: 100%;
+border-collapse: collapse;
+}
+
+.extra__item-info td:last-child {
+  text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+
+  .extra__item {
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-bottom: 26px;
+    border: 1px solid #cdcdcd;
+    border-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &:last-child {
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
+
+  .extra__item-info {
+    font-size: 16px;
+    line-height: 20px;
+    width: 290px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+    padding: 0;
+  }
+
+  .extra__item-info td {
+    padding: 0;
+  }
+
+  .extra__item-info td:last-child {
+    width: 95px;
+  }
+
+  .extra__item-title {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 25px;
+    margin-bottom: 26px;
+    width: 170px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .extra {
+    margin: 0;
+    width: 74%;
+  }
+
+  .extra__list {
+    margin: 0;
+  }
+
+  .extra__item {
+    flex-wrap: nowrap;
+    align-items: center;
+    min-height: 70px;
+    padding: 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  .extra__item .button__product {
+    width: 27%;
+    margin-left: 40px;
+  }
+
+  .extra__item-info {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .extra__item-info td:first-child {
+    width: 245px;
+    text-align: left;
+  }
+
+  .extra__item-info td:last-child {
+    width: 45px;
+    text-align: left;
+  }
+/*
+  .extra__item-title {
+    margin: 0;
+  }
+
+  .extra__item-info {
+    margin: 0;
+  }*/
+}

@@ -1,25 +1,245 @@
+.categories__list {
+  margin-top: 0px;
+  padding: 0;
+}
+
 .categories__item {
+  min-width: 280px;
   background-color: #f2f2f2;
+  list-style: none;
+  padding-bottom: 19px;
+  margin: 0 20px 20px 20px;
 }
 
 .categories__item-title {
-  text-align: center;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
   text-transform: uppercase;
-  padding-top: 38px;
-  padding-bottom: 38px;
-  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-left: 90px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $master-color;
+  }
+}
+
+.categories__item--diet::after {
+  content: url("../../img/icon-cat-slim.svg");
+  display: block;
+  position: absolute;
+  top: 22px;
+  left: 28px;
+  width: 35px;
+  height: 50px;
+}
+
+.categories__item--force::after {
+  content: url("../../img/icon-cat-pro.svg");
+  display: block;
+  position: absolute;
+  top: 35px;
+  left: 10px;
+  width: 68px;
+  height: 35px;
 }
 
 .categories__item-description {
-  margin-left: 22px;
-  margin-bottom: 22px;
+  position: relative;
+  margin-top: 0;
+  margin-left: 19px;
+  margin-right: 22px;
+  margin-bottom: 21px;
+  padding-bottom: 20px;
   border-bottom: 1px solid #d9d9d9;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .categories__link {
+  position: relative;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  padding: 20px 13px 20px 20px;
+  text-decoration: none;
+  color: #000000;
+  padding: 0 13px 0 18px;
+  z-index: 1;
+  background-color: #f2f2f2;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../../img/icon-right-arrow-verylong.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 37px;
+    height: 12px;
+    z-index: -1;
+    top: calc(50% - 12px / 2);
+    transition-property: transform;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      transform: translateX(20px);
+    }
+  }
+
+}
+
+@media (min-width: $tablet-width) {
+
+  .categories__list {
+    margin-bottom: 50px;
+  }
+
+  .categories__item {
+    padding-left: 55px;
+    padding-bottom: 60px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 31px;
+ }
+
+  .categories__item-title {
+    font-size: 36px;
+    line-height: 37px;
+    padding-top: 75px;
+    padding-left: 0;
+    margin-bottom: 25px;
+    text-align: left;
+
+    &::before {
+    content: "";
+    top: 90px;
+    right: 60px;
+    left: initial;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.categories__item--diet::after {
+  content: url("../../img/icon-cat-slim.svg");
+  display: block;
+  position: absolute;
+  top: 80px;
+  right: 89px;
+  left: initial;
+  width: 140px;
+  height: 200px;
+}
+
+.categories__item--force::after {
+  content: url("../../img/icon-cat-pro.svg");
+  display: block;
+  position: absolute;
+  top: 135px;
+  right: 25px;
+  left: initial;
+  width: 270px;
+  height: 160px;
+}
+
+
+  .categories__item-description {
+    font-size: 16px;
+    margin-left: 0;
+    margin-bottom: 35px;
+    line-height: 24px;
+    width: 57%;
+    border:none;
+  }
+
+  .categories-up__item-description {
+    width: 52.5%;
+  }
+
+  .categories__link {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 0;
+    padding-right: 23px;
+
+    &::after {
+      left: 114px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories__list {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 40px;
+    margin-bottom: 45px;
+  }
+
+  .categories__item {
+    padding-left: 50px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 42.5%;
+  }
+
+  .categories__item-description {
+    width: 95%;
+    margin-bottom: 10px;
+  }
+
+.categories__item-title {
+  margin-left: 160px;
+  margin-bottom: 73px;
+  font-size: 36px;
+  line-height: 37px;
+  padding-top: 80px;
+  padding-left: 0;
+  text-align: left;
+
+  &::before {
+    content: "";
+    top: 50px;
+    right: initial;
+    left: -160px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+  .categories__item--diet::after {
+    content: url("../../img/icon-cat-slim.svg");
+    display: block;
+    position: absolute;
+    top: 45px;
+    right: initial;
+    left: -145px;
+    width: 70px;
+   height: 110px;
+  }
+
+  .categories__item--force::after {
+    content: url("../../img/icon-cat-pro.svg");
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: initial;
+    left: -180px;
+    width: 135px;
+    height: 100px;
+  }
 }

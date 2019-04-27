@@ -1,7 +1,38 @@
-/*
-
 .page-main__title {
   font-size: 36px;
   line-height: 60px;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 29px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
 }
-*/
+
+@media  (min-width: $tablet-width) {
+  .page-main__title {
+    font-size: 60px;
+    line-height: 60px;
+    border: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+  }
+}
+
+@media  (min-width: $desktop-width) {
+  .page-main {
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
+  .page-main__title {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 26px;
+  }
+}
