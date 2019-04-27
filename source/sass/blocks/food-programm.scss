@@ -65,6 +65,7 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 533px;
+    margin-bottom: 0;
     background-image: url("../../img/index-can-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center bottom ;
@@ -113,7 +114,7 @@
 @media (min-width: $desktop-width) {
 
   .food-programm {
-    margin-left: 190px;
+    margin-left: 105px;
     padding-bottom: 265px;
     padding-left: 0;
     background-image: none;
@@ -123,10 +124,11 @@
     display: block;
     position: absolute;
     right: 330px;
+    top: 140px;
   }
 
   .food-programm__slogan{
-    margin-top: 80px;
+    margin-top: 65px;
     padding-left: 0;
   }
 
