@@ -6,11 +6,10 @@
 
 .cat-comparison {
   display: block;
-  /*margin-left: -20px;*/
   margin: 0 auto;
 }
 
-.cat-after {
+.cat--after {
   display: none;
 }
 
@@ -18,10 +17,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 37px 0 43px;
+  margin: 0 auto;
   align-items: center;
-  max-width: 200px;
-  padding: 32px 0;
+  width: 200px;
+  padding: 32px 0 35px 0;
 }
 
 .comparison__btn {
@@ -35,11 +34,16 @@
 
 .comparison__progress-line {
   position: relative;
-  width: 85px;
-  height: 14px;
+  width: 82px;
+  height: 12px;
   border: 1px solid #cdcdcd;
   background-color: #ffffff;
   border-radius: 50px;
+}
+
+.line-circle {
+  width: 0;
+  position: relative;
 
   &::after {
     content: "";
@@ -48,7 +52,133 @@
     height: 6px;
     background-color: $master-color;
     border-radius: 50px;
-    top: 4px;
-    left: 6px;
+    top: 3px;
+    left: 4px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .comparison__wrapper {
+    padding: 0 30px 40px 30px;
+    position: relative;
+    background-color: transparent;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-image: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+      width: 100%;
+      height: 462px;
+    }
+  }
+
+  .comparison-image {
+    position: relative;
+    height: 560px;
+    margin-top: 20px;
+    margin-left: 12px;
+  }
+
+  .cat-comparison {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .cat--before {
+    clip: rect(auto, 340px, auto, auto);
+  }
+
+  .cat--after {
+    display: block;
+    clip: rect(auto, auto, auto, 340px);
+  }
+
+  .comparison__slider {
+    width: 570px;
+    padding-top: 20px;
+  }
+
+  .comparison__progress-line {
+    width: 430px;
+    height: 6px;
+    background-color: #dcdcdc;
+    border: none;
+  }
+
+  .line-circle {
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 1px solid #dcdcdc;
+    bottom: -16px;
+    left: 200px;
+    cursor: pointer;
+
+    &::after{
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      top: 12px;
+      left: 12px;
+    }
+  }
+
+  .comparison__btn {
+    font-size: 20px;
+    z-index: 1;
+    cursor: pointer;
+    padding-bottom: 7px;
+    border-bottom: 1px dotted #d9d9d9;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+
+  .comparison__wrapper {
+    margin-right: 0;
+    margin-left: auto;
+    /*width: 55%;*/
+    width: 620px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .comparison {
+    margin-left: auto;
+    text-align: right;
+  }
+
+  .comparison__slider {
+    margin-right: 10px;
+  }
+
+  .comparison-image {
+    margin-bottom: 20px;
+    margin-top: -60px;
+    margin-left: 0;
+    width: 100%;
+    position: relative;
+    left: -40px;
+  }
+
+  .cat--before {
+    clip: rect(auto, 365px, auto, auto);
+  }
+
+  .cat--after {
+    clip: rect(auto, auto, auto, 365px);
   }
 }

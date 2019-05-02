@@ -1,0 +1,86 @@
+.cooperation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cooperation__title {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-left: 20px;
+  margin-top: 29px;
+  margin-bottom: 25px;
+  width: 140px;
+}
+
+.cooperation__text {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 20px;
+  width: 140px;
+  margin-top: 29px;
+  margin-right: 20px;
+}
+
+.maps {
+  height: 365px;
+}
+
+@media (min-width: $tablet-width) {
+
+  .cooperation {
+    margin-bottom: 20px;
+  }
+
+  .cooperation__title {
+    font-size: 20px;
+    line-height: 25px;
+    margin-left: 30px;
+    margin-top: 65px;
+    padding-left: 40px;
+    width: 160px;
+  }
+
+  .cooperation__text {
+    text-align: right;
+    font-size: 16px;
+    margin-top: 63px;
+    margin-right: 30px;
+    padding-right: 43px;
+    width: 160px;
+  }
+
+  .cooperation__text span {
+    display: block;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .cooperation__wrapper {
+    position: relative;
+  }
+
+  .cooperation {
+    position: absolute;
+    top: 90px;
+    left: 100px;
+    width: 570px;
+    min-height: 200px;
+    background-color: #ffffff;
+  }
+
+  .cooperation__text {
+    text-align: left;
+  }
+
+  .cooperation__title {
+    padding-left: 43px;
+  }
+
+  .cooperation__text {
+    padding-right: 58px;
+  }
+}

@@ -104,7 +104,7 @@
 @media (min-width: $tablet-width) {
 
   .categories__list {
-    margin-bottom: 50px;
+    margin-bottom: 43px;
   }
 
   .categories__item {
@@ -159,7 +159,7 @@
   .categories__item-description {
     font-size: 16px;
     margin-left: 0;
-    margin-bottom: 35px;
+    margin-bottom: 37px;
     line-height: 24px;
     width: 57%;
     border:none;
@@ -182,6 +182,11 @@
 }
 
 @media (min-width: $desktop-width) {
+
+  .categories {
+    margin: 0 70px;
+  }
+
   .categories__list {
     display: flex;
     justify-content: space-between;
