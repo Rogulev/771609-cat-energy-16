@@ -1,0 +1,51 @@
+.form__title {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  margin: 0 20px 25px 20px;
+  padding-top: 15px;
+}
+
+.form__text {
+  text-transform: uppercase;
+  margin: 0 20px 29px 20px;
+  max-width: 270px;
+}
+
+@media (min-width: $tablet-width) {
+
+  .form__choice {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .form__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 28px 30px 55px 30px;
+  }
+
+  .form__text {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 30px 55px 30px;
+    padding-left: 40px;
+    max-width: 350px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .form__choice {
+    padding: 0 70px;
+  }
+
+  .form__title {
+    margin: 45px 30px 56px 110px;
+  }
+
+  .form__text {
+    margin-left: 70px;
+    margin-bottom: 66px;
+  }
+}

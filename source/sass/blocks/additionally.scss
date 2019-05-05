@@ -1,0 +1,98 @@
+.additionally-wrapper {
+  margin: 0 20px 20px 20px;
+}
+
+.additionally {
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  & p {
+    position: relative;
+    margin-bottom: 23px;
+  }
+}
+
+.additionally__title {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 26px;
+}
+
+.additionally__text {
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-left: 45px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 28px;
+    width: 28px;
+    border: 1px solid #cfcfcf;
+  }
+}
+
+input[type=checkbox]:checked + .additionally__text::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  border-right: 2px solid $master-color;
+  border-bottom: 2px solid $master-color;
+  left: 10px;
+  bottom: 2px;
+  transform: rotate(45deg);
+}
+
+@media (min-width: $tablet-width) {
+
+  .additionally-wrapper {
+    margin: 0 40px;
+    margin-bottom: 28px;
+  }
+
+  .additionally__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & p {
+      width: 45%;
+      margin-bottom: 35px;
+    }
+  }
+
+  .additionally__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 53px;
+  }
+
+  .additionally__text {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 60px;
+
+    &::before {
+      left: 2px;
+      bottom: -8px;
+      height: 38px;
+      width: 38px;
+    }
+  }
+
+  input[type=checkbox]:checked + .additionally__text::after {
+    width: 10px;
+    height: 20px;
+    border-right: 1px solid $master-color;
+    border-bottom: 1px solid $master-color;
+    left: 17px;
+    bottom: 5px;
+    transform: rotate(45deg);
+  }
+
+}
