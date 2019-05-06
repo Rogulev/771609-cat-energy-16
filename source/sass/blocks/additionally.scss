@@ -1,0 +1,146 @@
+.additionally-wrapper {
+  margin: 0 20px 30px 20px;
+}
+
+.additionally {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.additionally__title {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 26px;
+  padding-right: 20px;
+  position: relative;
+  background-color: #ffffff;
+
+  &::before {
+    content: "";
+    width: 100vw;
+    height: 3px;
+    background-color: $master-color;
+    position: absolute;
+    top: 13px;
+    z-index: -1;
+  }
+}
+
+.additionally__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.additionally__container p {
+  margin-bottom: 10px;
+}
+
+.additionally__text {
+  position: relative;
+  width: 45%;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-left: 45px;
+  margin-bottom: 25px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -3px;
+    height: 28px;
+    width: 28px;
+    border: 1px solid #cfcfcf;
+  }
+}
+
+input[type=checkbox]:checked + .additionally__text::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  border-right: 2px solid $master-color;
+  border-bottom: 2px solid $master-color;
+  left: 10px;
+  bottom: 3px;
+  transform: rotate(45deg);
+}
+
+@media (min-width: $tablet-width) {
+
+  .additionally-wrapper {
+   margin: 0 0 28px 0;
+  }
+
+  .additionally__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .additionally__container p {
+    box-sizing: border-box;
+    width: 48.7%;
+    padding: 0 38px;
+    margin-bottom: 35px;
+  }
+
+  .additionally__title {
+    padding: 0 40px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 53px;
+
+    &::before {
+      top: 23px;
+    };
+
+    &::after {
+      content: "";
+      width: 100vw;
+      height: 3px;
+      background-color: $master-color;
+      position: absolute;
+      top: 23px;
+      left: -100px;
+      z-index: -1;
+    }
+  }
+
+  .additionally__text {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 60px;
+
+    &::before {
+      left: 2px;
+      bottom: -8px;
+      height: 38px;
+      width: 38px;
+    }
+  }
+
+  input[type=checkbox]:checked + .additionally__text::after {
+    width: 10px;
+    height: 20px;
+    border-right: 1px solid $master-color;
+    border-bottom: 1px solid $master-color;
+    left: 17px;
+    bottom: 8px;
+    transform: rotate(45deg);
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .additionally__container p {
+    width: 25%;
+  }
+
+  .additionally-wrapper {
+    margin-bottom: 35px;
+  }
+}

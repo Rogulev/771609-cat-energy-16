@@ -5,7 +5,7 @@
   margin-top: 0;
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
   padding-right: 55px;
 }
 
@@ -15,6 +15,7 @@
   padding-left: 20px;
   padding-right: 20px;
   margin-left: 0;
+  margin-bottom: 42px;
 }
 
 .advantage__item {
@@ -25,7 +26,7 @@
   min-height: 60px;
   line-height: 18px;
   font-size: 14px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
 
   &::before {
     content:"";
@@ -63,8 +64,9 @@
 }
 
 .advantage__description {
-  margin-top: 15px;
-  margin-bottom: 10px;
+  margin: 0;/*
+  margin-top: 12px;
+  margin-bottom: 10px;*/
 }
 
 @media (min-width: $tablet-width) {
@@ -83,23 +85,41 @@
     justify-content: space-between;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 55px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    counter-reset: section;
   }
 
   .advantage__item {
+    position: relative;
     display: block;
     width: 46%;
     min-height: 230px;
-    margin-bottom: 85px;
+    margin-bottom: 88px;
 
     &:nth-last-child(1),
-     :nth-last-child(2) {
-       margin-bottom: 60px;
+    &:nth-last-child(2) {
+       margin-bottom: 0px;
      }
 
     &::before {
       width: 80px;
       height: 80px;
-      margin-bottom: 30px;
+      margin-bottom: 35px;
+    }
+
+    &::after {
+      position: absolute;
+      counter-increment: section;
+      content: counter(section);
+      font-size: 281px;
+      line-height: 281px;
+      right: 80px;
+      top: -40px;
+      opacity: 0.1;
+      z-index: -1;
+      font-family: "Oswald", "Arial", sans-serif;
     }
   }
 
@@ -112,6 +132,11 @@
 }
 
 @media (min-width: $desktop-width) {
+
+  .advantage {
+    margin: 0 70px;
+  }
+
   .advantage__head {
     margin-left: 25px;
   }
@@ -121,9 +146,23 @@
     margin-left: 25px;
     margin-right: 35px;
     flex-direction: row;
+    border-bottom: none;
+    margin-bottom: 48px;
   }
 
   .advantage__item {
     width: 20%;
+    margin-bottom: 0;
+
+    &::after {
+      font-size: 281px;
+      line-height: 281px;
+      right: 0;
+      top: -40px;
+    }
+  }
+
+  .advantage__item::after:nth-last-child(1) {
+    right: 20px;
   }
 }
