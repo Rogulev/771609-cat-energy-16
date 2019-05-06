@@ -62,13 +62,13 @@
   .comparison__wrapper {
     padding: 0 30px 40px 30px;
     position: relative;
-    background-color: transparent;
+    background-color: #ffffff;
 
     &::before {
       content: "";
       position: absolute;
       left: 0;
-      bottom: 0;
+      bottom: 10px;
       background-image: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
       width: 100%;
       height: 462px;
@@ -100,7 +100,7 @@
 
   .comparison__slider {
     width: 570px;
-    padding-top: 20px;
+    padding-top: 17px;
   }
 
   .comparison__progress-line {
@@ -118,7 +118,7 @@
     background-color: #ffffff;
     border-radius: 50%;
     border: 1px solid #dcdcdc;
-    bottom: -16px;
+    bottom: -13px;
     left: 200px;
     cursor: pointer;
 
@@ -148,7 +148,7 @@
   .comparison__wrapper {
     margin-right: 0;
     margin-left: auto;
-    /*width: 55%;*/
+    background-color: inherit;
     width: 620px;
 
     &::before {

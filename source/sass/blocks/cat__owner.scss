@@ -1,40 +1,48 @@
-.cat__owner-wrapper {
+.cat-owner__wrapper {
   margin: 0 20px 13px 20px;
 }
 
-.cat__owner {
+.cat-owner {
   border: none;
   padding: 0;
   margin: 0;
 }
 
-.cat__owner-title {
+.cat-owner__title {
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 32px;
-}
+  position: relative;
+  background-color: #ffffff;
+  padding-right: 20px;
+  width: 72%;
 
-.cat__owner-container {
-  font-size: 16px;
-  text-transform: uppercase;
-
-  p {
-    margin: 0 0 14px 0;
+  &::before {
+    content: "";
+    width: 100vw;
+    height: 3px;
+    background-color: $master-color;
+    position: absolute;
+    top: 12px;
+    z-index: -1;
   }
 }
 
-.cat__owner-container label {
+.cat-owner__container-text {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0 0 14px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.cat__owner-text {
+.cat-owner__text {
   flex-shrink: 0;
   margin-right: 10px;
 }
 
-.cat__owner-box {
+.cat-owner__box {
   width: 100%;
   text-transform: uppercase;
   padding: 13px 15px;
@@ -44,37 +52,57 @@
 
 @media (min-width: $tablet-width) {
 
-  .cat__owner-wrapper {
+  .cat-owner__wrapper {
     margin: 0;
   }
 
-  .cat__owner {
+  .cat-owner {
     margin-bottom: 45px;
   }
 
-  .cat__owner-container {
+  .cat-owner__container {
     margin: 0 36px 0 40px;
-
-    & p {
-      margin-bottom: 20px;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
-  .cat__owner-title {
+  .cat-owner__container-text {
+    margin-bottom: 20px;
+  }
+
+  .cat-owner__title {
     font-size: 36px;
     line-height: 36px;
     padding-left: 38px;
+    padding-right: 42px;
     margin-bottom: 77px;
+    width: initial;
+
+    &::before {
+      top: 23px;
+    };
+
+    &::after {
+      content: "";
+      width: 100vw;
+      height: 3px;
+      background-color: $master-color;
+      position: absolute;
+      top: 23px;
+      left: -100px;
+      z-index: -1;
+    }
   }
 
-  .cat__owner-text {
+  .cat-owner__text {
     margin-right: 20px;
     font-size: 20px;
     line-height: 20px;
   }
 
 
-  .cat__owner-box {
+  .cat-owner__box {
     font-size: 20px;
     line-height: 20px;
     padding: 10px 15px 10px 19px;
@@ -87,17 +115,17 @@
 
 @media (min-width: $desktop-width) {
 
-  .cat__owner-title {
+  .cat-owner__title {
     margin-bottom: 75px;
   }
 
-  .cat__owner-container {
+  .cat-owner__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .cat__owner-container p {
+  .cat-owner__container-text {
     width: 46.7%;
   }
 }

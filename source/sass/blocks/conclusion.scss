@@ -1,5 +1,5 @@
 .conclusion {
-  margin: 0 20px;
+  margin: 0 20px 32px 20px;
 }
 
 .conclusion__btn {
@@ -35,7 +35,7 @@
   .btn__form {
     font-size: 20px;
     line-height: 20px;
-    padding: 15px 67px 18px 63px;
+    padding: 15px 67px 18px 62px;
   }
 
   .conclusion__info {
@@ -43,5 +43,23 @@
     line-height: 16px;
     margin-right: 100px;
     margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .conclusion__btn {
+    width: 50%;
+    padding-right: 80px;
+   }
+
+   .btn__form {
+    padding-left: 68px;
+   }
+
+  .conclusion__info {
+    width: 50%;
+    margin-right: 0;
+    text-align: left;
   }
 }
