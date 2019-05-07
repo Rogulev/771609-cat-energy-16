@@ -6,10 +6,20 @@
 .food-programm {
   background-image: url(../../img/index-background-mobile@1x.jpg);
   background-repeat: repeat-x;
+  background-size: 320px 305px;
   background-position: top center;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+}
+
+
+@media
+  (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+    .food-programm {
+      background-image: url(../../img/index-background-mobile@2x.jpg);
+    }
 }
 
 .food-programm__slogan {
@@ -66,9 +76,7 @@
     padding-right: 30px;
     padding-bottom: 533px;
     margin-bottom: 0;
-    background-image: url("../../img/index-can-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center bottom ;
+    background-image: none;
   }
 
   .food-programm__slogan {
@@ -92,12 +100,10 @@
   }
 
   .food-programm__image{
-    display: none;
-    /*
     position: absolute;
-    bottom: 0px;
+    bottom: -120px;
     left: 30px;
-    z-index: -1;*/
+    z-index: -1;
   }
 
   .food-programm__search {
@@ -121,15 +127,14 @@
   }
 
   .food-programm__image {
-    display: block;
-    position: absolute;
-    right: 330px;
+    right: -190px;
     top: 140px;
   }
 
   .food-programm__slogan{
     margin-top: 65px;
     padding-left: 0;
+    z-index: 1;
   }
 
   .food-programm__intro {
