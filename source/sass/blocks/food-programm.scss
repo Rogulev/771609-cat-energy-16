@@ -76,19 +76,8 @@
     padding-right: 30px;
     padding-bottom: 533px;
     margin-bottom: 0;
-    background-image: url(../../img/index-can-tablet@1x.jpg);
-    background-repeat: no-repeat;
-    background-position: center bottom ;
-
+    background-image: none;
   }
-
-  @media
-  (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx) {
-    .food-programm {
-      background-image: url(../../img/index-can-tablet@2x.jpg);
-    }
-}
 
   .food-programm__slogan {
     font-size: 60px;
@@ -111,10 +100,8 @@
   }
 
   .food-programm__image{
-
-
     position: absolute;
-    bottom: 0px;
+    bottom: -120px;
     left: 30px;
     z-index: -1;
   }
@@ -140,9 +127,7 @@
   }
 
   .food-programm__image {
-    display: block;
-    position: absolute;
-    right: 330px;
+    right: -190px;
     top: 140px;
   }
 

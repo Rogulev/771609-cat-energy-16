@@ -15,6 +15,7 @@
   padding: 0 20px 0 0;
   margin-bottom: 35px;
   background-color: #ffffff;
+  position: relative;
 
   &::before {
     content: "";
@@ -39,6 +40,10 @@
 }
 
 @media (min-width: $tablet-width) {
+
+  .comments {
+    margin-right: 35px;
+  }
 
   .comments__wrapper {
     margin: 0 37px 63px 0;
