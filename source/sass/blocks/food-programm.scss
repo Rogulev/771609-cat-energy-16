@@ -101,8 +101,10 @@
 
   .food-programm__image{
     position: absolute;
-    bottom: -120px;
-    left: 30px;
+    top: 340px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     z-index: -1;
   }
 

@@ -12,6 +12,18 @@
   padding-bottom: 12px;
 }
 
+.page-header__logo-image {
+
+  &:hover,
+  :focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .toggle-menu {
   position: absolute;
   top: 21px;
@@ -52,6 +64,15 @@
   text-transform: uppercase;
   color: #000000;
   border-top: 1px solid #e6e6e6;
+
+  &:hover,
+  :focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .site-list__item:nth-last-child(1) {

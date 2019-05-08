@@ -66,6 +66,20 @@
 
 .product-more {
   text-align: center;
+  position: relative;
+  margin-top: 80px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: -55px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      background-image: url("../img/icon-plus.svg");
+    }
 }
 
 .product-title{
@@ -94,20 +108,15 @@
   font-size: 16px;
   padding-top: 12px;
   padding-bottom: 12px;
- /*    Плюс */ /*
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url(../../img/icon-plus-mobile.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 30px;
-    height: 30px;
-    opacity: 0.2;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-  }*/
+
+  &:hover,
+  :focus {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3)
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -119,10 +128,6 @@
     background-color: #f2f2f2;
     height: 432px;
     box-sizing: border-box;
-
-    /*
-    display: flex;
-    flex-direction: column;*/
   }
 
   .product__item {
@@ -140,11 +145,6 @@
     height: 200px;
     margin-top: -70px;
   }
-/*
-  .product__image picture {
-    position: absolute;
-    top: -45px;
-  }*/
 
   .product__item-name {
     font-size: 20px;
@@ -179,23 +179,31 @@
     padding: 7px 0;
     border-bottom: 1px solid #cdcdcd;
   }
-/*
-  .button__product {
-    margin-top: 35px;
-  }
-*/
+
   .product__item-more {
     margin-top: 140px;
   }
 
   .product-more {
     padding: 0 40px 40px 40px;
+    margin-top: 0;
     outline: 1px solid #e6e6e6;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    height: 100%;
+    height: 432px;
+    box-sizing: border-box;
+
+    &::after {
+      width: 60px;
+      height: 60px;
+      top: 55px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      opacity: 0.3;
+    }
   }
 
   .product-title {
@@ -224,5 +232,14 @@
 
   .product-text {
     width: 180px;
+  }
+
+  .product-more {
+    &::after {
+      top: 55px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
   }
 }

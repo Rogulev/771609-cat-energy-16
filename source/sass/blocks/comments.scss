@@ -36,7 +36,15 @@
   width: 100%;
   padding: 13px 12px 13px 15px;
   box-sizing: border-box;
-  border-color: #e6e6e6;
+  border: 1px solid #e6e6e6;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #000000;
+  }
 }
 
 @media (min-width: $tablet-width) {
