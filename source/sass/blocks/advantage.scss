@@ -39,25 +39,25 @@
     background-size: 50px 50px;
   }
 
-  &-usefully::before {
+  &--usefully::before {
     background-image: url("../../img/advantage-leaf@1x.png");
     background-position: center;
     background-repeat: no-repeat;
   }
 
-  &-powder::before {
+  &--powder::before {
     background-image: url("../../img/advantage-powder@1x.png");
     background-position: center;
     background-repeat: no-repeat;
   }
 
-  &-change::before {
+  &--change::before {
     background-image: url("../../img/advantage-dining@1x.png");
     background-position: center;
     background-repeat: no-repeat;
   }
 
-  &-time::before {
+  &--time::before {
     background-image: url("../../img/advantage-clock@1x.png");
     background-position: center;
     background-repeat: no-repeat;

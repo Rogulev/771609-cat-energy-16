@@ -1,14 +1,14 @@
-.cat-owner__wrapper {
+.owner {
   margin: 0 20px 13px 20px;
 }
 
-.cat-owner {
+.owner__wrapper{
   border: none;
   padding: 0;
   margin: 0;
 }
 
-.cat-owner__title {
+.owner__title {
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 32px;
@@ -28,11 +28,12 @@
   }
 }
 
-.cat-owner__title span {
+.owner__title span {
   position: relative;
 }
 
-.cat-owner__container-text {
+.owner__container-text {
+  position: relative;
   font-size: 16px;
   text-transform: uppercase;
   margin: 0 0 14px 0;
@@ -41,15 +42,15 @@
   align-items: center;
 }
 
-.cat-owner__text {
+.owner__text {
   flex-shrink: 0;
   margin-right: 10px;
 }
 
-.cat-owner__box {
+.owner__box {
   width: 100%;
   text-transform: uppercase;
-  padding: 13px 15px;
+  padding: 13px 40px 13px 15px;
   width: 100%;
   border: 1px solid #e6e6e6;
 
@@ -59,31 +60,58 @@
 
   &:focus {
     outline: 2px solid #000000;
+
+
+    &:invalid {
+      outline: 2px solid #ff8282;
+    }
   }
+}
+
+.owner__box:focus + .owner__icon {
+  fill: $master-color;
+}
+
+.owner__box:focus:invalid + .owner__icon {
+  fill: #ff8282;
+}
+
+.owner__icon--mail {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  right: 16px;
+}
+
+.owner__icon--phone {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 14px;
 }
 
 @media (min-width: $tablet-width) {
 
-  .cat-owner__wrapper {
+  .owner {
     margin: 0;
   }
 
-  .cat-owner {
+  .owner__wrapper{
     margin-bottom: 45px;
   }
 
-  .cat-owner__container {
+  .owner__container {
     margin: 0 36px 0 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  .cat-owner__container-text {
+  .owner__container-text {
     margin-bottom: 20px;
   }
 
-  .cat-owner__title {
+  .owner__title {
     font-size: 36px;
     line-height: 36px;
     padding-left: 38px;
@@ -107,14 +135,14 @@
     }
   }
 
-  .cat-owner__text {
+  .owner__text {
     margin-right: 20px;
     font-size: 20px;
     line-height: 20px;
   }
 
 
-  .cat-owner__box {
+  .owner__box {
     font-size: 20px;
     line-height: 20px;
     padding: 10px 15px 10px 19px;
@@ -127,18 +155,18 @@
 
 @media (min-width: $desktop-width) {
 
-  .cat-owner__title {
+  .owner__title {
     margin-bottom: 75px;
     max-width: 595px;
    }
 
-  .cat-owner__container {
+  .owner__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .cat-owner__container-text {
+  .owner__container-text {
     width: 46.7%;
   }
 }

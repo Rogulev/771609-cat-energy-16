@@ -35,7 +35,7 @@
   }
 }
 
-.categories__item--diet::after {
+.categories__item-title--diet::after {
   content: url("../../img/icon-cat-slim.svg");
   display: block;
   position: absolute;
@@ -45,7 +45,7 @@
   height: 50px;
 }
 
-.categories__item--force::after {
+.categories__item-title--force::after {
   content: url("../../img/icon-cat-pro.svg");
   display: block;
   position: absolute;
@@ -137,10 +137,7 @@
   }
 }
 
-.categories__item--diet::after {
-  content: url("../../img/icon-cat-slim.svg");
-  display: block;
-  position: absolute;
+.categories__item-title--diet::after {
   top: 80px;
   right: 89px;
   left: initial;
@@ -148,10 +145,7 @@
   height: 200px;
 }
 
-.categories__item--force::after {
-  content: url("../../img/icon-cat-pro.svg");
-  display: block;
-  position: absolute;
+.categories__item-title--force::after {
   top: 135px;
   right: 25px;
   left: initial;
@@ -230,10 +224,7 @@
   }
 }
 
-  .categories__item--diet::after {
-    content: url("../../img/icon-cat-slim.svg");
-    display: block;
-    position: absolute;
+  .categories__item-title--diet::after {
     top: 45px;
     right: initial;
     left: -145px;
@@ -241,10 +232,7 @@
    height: 110px;
   }
 
-  .categories__item--force::after {
-    content: url("../../img/icon-cat-pro.svg");
-    display: block;
-    position: absolute;
+  .categories__item-title--force::after {
     top: 70px;
     right: initial;
     left: -180px;

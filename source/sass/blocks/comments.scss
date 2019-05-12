@@ -1,12 +1,12 @@
 .comments {
+  margin: 0 20px 25px 20px;
+}
+
+.comments__wrapper {
   margin: 0;
   padding: 0;
   border: none;
   position: relative;
-}
-
-.comments__wrapper {
-  margin: 0 20px 25px 20px;
 }
 
 .comments__title {
@@ -49,11 +49,11 @@
 
 @media (min-width: $tablet-width) {
 
-  .comments {
+  .comments__wrapper {
     margin-right: 35px;
   }
 
-  .comments__wrapper {
+  .comments {
     margin: 0 37px 63px 0;
   }
 
