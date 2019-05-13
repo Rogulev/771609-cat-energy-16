@@ -22,8 +22,8 @@
           <source media="(min-width: 1280px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg"> <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="логотип Cat Energy"> </picture>
       </a>
-      <button class="toggle-menu" type="button"><span class="visually-hidden">Открыть список</span></button>
-      <nav class="main-nav  main-nav--closed">
+      <button class="toggle-menu toggle-menu--nojs" type="button"><span class="visually-hidden">Открыть список</span></button>
+      <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item"> <a href="index.html" class="navigation__link">Главная</a> </li>
           <li class="site-list__item site-list__item--active"> <a class="navigation__link navigation__link--active">Каталог продукции</a> </li>
@@ -323,6 +323,8 @@
       </section>
     </footer>
   </div>
+  <script src="js/toggle-menu.js"></script>
+  <script src="js/picturefill.min.js"></script>
 </body>
 
 </html>
