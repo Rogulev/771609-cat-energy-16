@@ -67,7 +67,7 @@
 .product-more {
   text-align: center;
   position: relative;
-  margin-top: 80px;
+  margin-top: 78px;
 
     &::after {
       content: "";
@@ -121,6 +121,11 @@
 
 @media (min-width: $tablet-width) {
 
+  .button__product {
+    padding-top: 12px;
+    padding-bottom: 10px;
+  }
+
   .product {
     padding-left: 37px;
     padding-right: 37px;
@@ -134,7 +139,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     height: initial;
   }
 
@@ -167,6 +172,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 33px;
+    margin-left: 1px;
     margin-bottom: 4px;
   }
 
@@ -176,7 +182,8 @@
 
   .product__property {
     font-size: 16px;
-    padding: 7px 0;
+    padding: 8px 0 8px 0;
+    line-height: 15px;
     border-bottom: 1px solid #cdcdcd;
   }
 
@@ -222,19 +229,27 @@
 
 @media (min-width: $desktop-width) {
   .product {
-    padding-left: 40px;
+    padding-left: 38px;
+    padding-right: 39px;
   }
 
   .product__item-name {
     width: 150px;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
+  }
+
+  .product-title {
+    margin-bottom: 25px;
   }
 
   .product-text {
     width: 180px;
+    margin-bottom: 82px;
   }
 
   .product-more {
+    padding-left: 42px;
+
     &::after {
       top: 55px;
       left: 0;

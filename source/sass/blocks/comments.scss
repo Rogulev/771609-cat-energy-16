@@ -1,5 +1,5 @@
 .comments {
-  margin: 0 20px 25px 20px;
+  margin: 0 20px 25px 19px;
 }
 
 .comments__wrapper {
@@ -16,7 +16,7 @@
   margin-bottom: 35px;
   background-color: #ffffff;
   position: relative;
-
+/*
   &::before {
     content: "";
     width: 100vw;
@@ -25,7 +25,7 @@
     position: absolute;
     top: 13px;
     z-index: -1;
-  }
+  }*/
 }
 
 .comments__box {
@@ -50,18 +50,18 @@
 @media (min-width: $tablet-width) {
 
   .comments__wrapper {
-    margin-right: 35px;
+    margin-right: 40px;
   }
 
   .comments {
-    margin: 0 37px 63px 0;
+    margin: 0 37px 62px 0;
   }
 
   .comments__title {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 77px;
-    padding: 0 40px;
+    padding: 0 40px 0 39px;
 
     &::before {
       top: 23px;
@@ -82,7 +82,7 @@
   .comments__box {
     font-size: 20px;
     line-height: 30px;
-    padding: 9px 12px 13px 20px;
+    padding: 9px 12px 13px 19px;
     margin-left: 40px;
     min-height: 175px;
   }

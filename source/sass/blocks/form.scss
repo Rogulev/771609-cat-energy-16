@@ -2,13 +2,13 @@
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
-  margin: 0 20px 25px 20px;
+  margin: 0 20px 26px 20px;
   padding-top: 15px;
 }
 
 .form__text {
   text-transform: uppercase;
-  margin: 0 20px 29px 20px;
+  margin: 0 20px 28px 20px;
   max-width: 270px;
 }
 
@@ -22,7 +22,8 @@
   .form__title {
     font-size: 60px;
     line-height: 60px;
-    margin: 28px 30px 55px 30px;
+    margin: 53px 30px 55px 29px;
+    padding-top: 0;
   }
 
   .form__text {
@@ -41,11 +42,11 @@
   }
 
   .form__title {
-    margin: 45px 30px 56px 110px;
+    margin: 70px 30px 56px 110px;
   }
 
   .form__text {
     margin-left: 70px;
-    margin-bottom: 66px;
+    margin-bottom: 65px;
   }
 }

@@ -3,7 +3,7 @@
 }
 
 .conclusion__btn {
-  margin-bottom: 21px;
+  margin-bottom: 22px;
 }
 
 .btn__form {
@@ -28,7 +28,7 @@
   .conclusion {
     display: flex;
     flex-direction: row;
-    margin: 0 42px 50px 42px;
+    margin: 0 42px 48px 40px;
   }
 
 
@@ -41,16 +41,20 @@
   .conclusion__info {
     font-size: 16px;
     line-height: 16px;
-    margin-right: 100px;
+    margin-right: 102px;
     margin-left: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
 
+  .conclusion {
+    margin-bottom: 58px;
+  }
+
   .conclusion__btn {
-    width: 50%;
-    padding-right: 80px;
+    width: 50.4%;
+    padding-right: 82px;
    }
 
    .btn__form {

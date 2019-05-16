@@ -12,10 +12,10 @@
 }
 
 .cat__information--border {
-  padding-bottom: 0;
+  padding: 16px 20px 11px 65px;
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .cat__text--wrapper {
@@ -46,7 +46,7 @@
 }
 
 .cat__information--radio {
-  margin: 15px 0 15px 45px;
+  margin-bottom: 5px;
   padding: 10px 0;
   display: block;
   position: relative;
@@ -99,7 +99,7 @@ input[type=radio]:checked + .cat__information--radio {
 @media (min-width: $tablet-width) {
 
   .cat__information {
-    padding: 0 37px 0 40px;
+    padding: 0 37px 0 39px;
   }
 
   .cat__text--wrapper {
@@ -109,7 +109,7 @@ input[type=radio]:checked + .cat__information--radio {
   }
 
   .cat__text {
-    margin-right: 17px;
+    margin-right: 16px;
   }
 
   .cat__box {
@@ -121,14 +121,15 @@ input[type=radio]:checked + .cat__information--radio {
   .cat__information--border {
     border: 1px solid #e6e6e6;
     margin: 53px 37px 75px 40px;
-    padding-top: 9px;
-    padding-left: 42px;
+    padding-top: 24px;
+    padding-left: 85px;
+    padding: 24px 40px 10px 85px;
   }
 
   .cat__information--radio {
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 13px;
 
     &::before {
       width: 38px;
@@ -155,14 +156,14 @@ input[type=radio]:checked + .cat__information--radio {
 
   .cat__text--wrapper {
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   .cat {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 49px;
   }
 
   .cat__information {
@@ -171,7 +172,7 @@ input[type=radio]:checked + .cat__information--radio {
   }
 
    .cat__information--border {
-    padding: 8px 42px 0 42px;
+    padding: 24px 42px 11px 86px;
     margin: 0;
   }
 
@@ -183,7 +184,7 @@ input[type=radio]:checked + .cat__information--radio {
 
   .cat__information--wrapper{
     width: 50%;
-    padding: 0 40px;
+    padding: 0 40px 0 41px;
   }
 
 }

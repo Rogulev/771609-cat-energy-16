@@ -11,11 +11,6 @@
   padding-bottom: 23px;
   border-bottom: 1px solid #e6e6e6;
 }
-/*
-.catalog__item:nth-last-child(1) {
-  min-height: 192px;
-  box-sizing: border-box;
-}*/
 
 @media (min-width: $tablet-width) {
 
@@ -33,7 +28,7 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 0;
-    margin-top: 110px;
+    margin-top: 109px;
     margin-bottom: 30px;
     background-color: #ffffff;
     border: none;
@@ -51,6 +46,7 @@
   }
 
   .catalog__item {
+    margin-top: 112px;
     padding: 0;
     margin-right: 3.1%;
     margin-left: 3.1%;

@@ -1,5 +1,5 @@
 .owner {
-  margin: 0 20px 13px 20px;
+  margin: 0 20px 13px 19px;
 }
 
 .owner__wrapper{
@@ -11,12 +11,12 @@
 .owner__title {
   font-size: 24px;
   line-height: 24px;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
   position: relative;
   background-color: #ffffff;
   padding-right: 20px;
   width: 205px;
-
+/*
   &::before {
     content: "";
     width: 100vw;
@@ -25,7 +25,7 @@
     position: absolute;
     top: 12px;
     z-index: -1;
-  }
+  }*/
 }
 
 .owner__title span {
@@ -44,7 +44,7 @@
 
 .owner__text {
   flex-shrink: 0;
-  margin-right: 10px;
+  margin-right: 11px;
 }
 
 .owner__box {
@@ -101,7 +101,7 @@
   }
 
   .owner__container {
-    margin: 0 36px 0 40px;
+    margin: 0 36px 0 39px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -111,10 +111,14 @@
     margin-bottom: 20px;
   }
 
+  .owner__container-text:nth-child(2) {
+    margin-left: -3px;
+  }
+
   .owner__title {
     font-size: 36px;
     line-height: 36px;
-    padding-left: 38px;
+    padding-left: 37px;
     padding-right: 42px;
     margin-bottom: 77px;
     width: 600px;
@@ -151,12 +155,25 @@
   .text-tel {
     margin-right: 15px;
   }
+
+  .owner__icon--mail {
+    right: 20px;
+  }
+
+  .owner__icon--phone {
+    right: 17px;
+  }
 }
 
 @media (min-width: $desktop-width) {
 
+  .owner__wrapper {
+    margin-bottom: 48px;
+  }
+
   .owner__title {
     margin-bottom: 75px;
+    padding-left: 39px;
     max-width: 595px;
    }
 
@@ -164,6 +181,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0 39px 0 40px;
   }
 
   .owner__container-text {

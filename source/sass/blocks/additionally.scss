@@ -1,5 +1,5 @@
 .additionally-wrapper {
-  margin: 0 20px 30px 20px;
+  margin: 0 20px 29px 20px;
 }
 
 .additionally {
@@ -15,7 +15,7 @@
   padding-right: 20px;
   position: relative;
   background-color: #ffffff;
-
+/*
   &::before {
     content: "";
     width: 100vw;
@@ -24,7 +24,7 @@
     position: absolute;
     top: 13px;
     z-index: -1;
-  }
+  }*/
 }
 
 .additionally__container {
@@ -94,15 +94,15 @@ input[type=checkbox]:checked + .additionally__text::after {
   .additionally__container p {
     box-sizing: border-box;
     width: 48.7%;
-    padding: 0 38px;
-    margin-bottom: 35px;
+    padding: 0 37px;
+    margin-bottom: 36px;
   }
 
   .additionally__title {
-    padding: 0 40px;
+    padding: 0 40px 0 37px;
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 53px;
+    margin-bottom: 52px;
 
     &::before {
       top: 23px;
@@ -146,8 +146,13 @@ input[type=checkbox]:checked + .additionally__text::after {
 
 @media (min-width: $desktop-width) {
 
+  .additionally__title {
+    padding-left: 39px;
+  }
+
   .additionally__container p {
     width: 25%;
+    padding-left: 38px;
   }
 
   .additionally-wrapper {

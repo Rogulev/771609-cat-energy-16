@@ -66,6 +66,13 @@
   box-sizing: content-box;
 }
 
+@media (max-width: $mobile-width-only) {
+
+  .main-nav {
+    margin: 0 -20px;
+  }
+}
+
 @media (min-width: $tablet-width) {
 
   .page-header__logo {
