@@ -16,7 +16,7 @@
   background-color: #ffffff;
   padding-right: 20px;
   width: 205px;
-/*
+
   &::before {
     content: "";
     width: 100vw;
@@ -25,7 +25,7 @@
     position: absolute;
     top: 12px;
     z-index: -1;
-  }*/
+  }
 }
 
 .owner__title span {
@@ -147,6 +147,7 @@
 
 
   .owner__box {
+    height: 30px;
     font-size: 20px;
     line-height: 20px;
     padding: 10px 15px 10px 19px;

@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+}
+
 body {
   min-width: 320px;
   margin: 0 auto;
@@ -10,6 +14,7 @@ body {
   font-family: "Oswald", "Arial", sans-serif;
   color: #000000;
   font-style: normal;
+  overflow-x: hidden;
 
   background-color: #ffffff;
 }
@@ -28,12 +33,4 @@ body {
 .wrapper {
   margin-left: auto;
   margin-right: auto;
-}
-
-input[type=radio] {
-  display: none;
-}
-
-input[type=checkbox] {
-  display: none;
 }
