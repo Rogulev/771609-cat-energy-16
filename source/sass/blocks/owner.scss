@@ -51,7 +51,6 @@
   width: 100%;
   text-transform: uppercase;
   padding: 13px 40px 13px 15px;
-  width: 100%;
   border: 1px solid #e6e6e6;
 
   &:hover {
@@ -81,13 +80,15 @@
   width: 17px;
   height: 17px;
   right: 16px;
+  top: 33%;
 }
 
 .owner__icon--phone {
   position: absolute;
   width: 20px;
   height: 20px;
-  right: 14px;
+  right: 13px;
+  top: 32%;
 }
 
 @media (min-width: $tablet-width) {

@@ -57,14 +57,21 @@
     border: 1px solid #cfcfcf;
   }
 
-  &:hover::before,
-  :focus::before {
+  &:hover::before {
     border: 1px solid #bababa;
   }
 
   &:active {
     opacity: 0.3;
   }
+}
+
+.additionally__check:focus + .additionally__text::before {
+  border: 1px solid #bababa;
+}
+
+.additionally__check:focus + .additionally__text {
+  outline: 1px solid #bababa;
 }
 
 input[type=checkbox]:checked + .additionally__text::after {

@@ -27,6 +27,7 @@
 
 .cat__text {
   margin-right: 15px;
+  display: inline-block;
   flex-shrink: 0;
 }
 
@@ -94,6 +95,10 @@ input[type=radio]:checked + .cat__information--radio {
   &:active::after {
     opacity: 0.3;
   }
+}
+
+.cat__information--check:focus + .cat__information--radio::before {
+  border: 1px solid #bcbcbc;
 }
 
 @media (min-width: $tablet-width) {

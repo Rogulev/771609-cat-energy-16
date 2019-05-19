@@ -30,9 +30,12 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .cooperation__wrapper {
     padding: 64px 72px 58px 71px;
+  }
+
+  .cooperation__wrapper--index {
+    padding: 55px 72px 58px 71px;
   }
 
   .cooperation__title {

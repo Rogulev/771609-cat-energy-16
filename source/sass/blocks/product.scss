@@ -133,12 +133,16 @@
     background-color: #f2f2f2;
     height: 432px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
   .product__item {
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-bottom: 28px;
     height: initial;
   }
