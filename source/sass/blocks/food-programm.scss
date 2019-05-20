@@ -4,7 +4,7 @@
 }
 
 .food-programm {
-  background-image: url(../../img/index-background-mobile@1x.jpg);
+  background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: repeat-x;
   background-size: 320px 305px;
   background-position: top center;
@@ -14,12 +14,11 @@
 }
 
 
-@media
-  (min-resolution: 144dpi),
+@media (min-resolution: 144dpi),
   (min-resolution: 1.5dppx) {
-    .food-programm {
-      background-image: url(../../img/index-background-mobile@2x.jpg);
-    }
+  .food-programm {
+    background-image: url("../../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .food-programm__slogan {
@@ -47,7 +46,7 @@
 
   line-height: 14px;
   text-transform: uppercase;
-  margin: 0 0px 25px 0px;
+  margin: 0 0 25px 0;
 }
 
 .food-programm__image {
@@ -69,7 +68,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .food-programm {
     width: 708px;
     padding: 10px 30px 530px 28px;
@@ -97,7 +95,7 @@
     color: #000000;
   }
 
-  .food-programm__image{
+  .food-programm__image {
     position: absolute;
     top: 340px;
     left: 0;
@@ -118,7 +116,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .food-programm {
     margin-left: 105px;
     padding-bottom: 270px;
@@ -132,7 +129,7 @@
     top: 140px;
   }
 
-  .food-programm__slogan{
+  .food-programm__slogan {
     margin-top: 65px;
     margin-bottom: 41px;
     padding-left: 0;

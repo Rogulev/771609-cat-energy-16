@@ -6,11 +6,6 @@
   text-transform: uppercase;
 }
 
-.cat__text--wrapper {
-  margin-bottom: 13px;
-  margin-top: 10px;
-}
-
 .cat__information--border {
   padding: 16px 20px 11px 65px;
   border-top: 1px solid #e6e6e6;
@@ -23,6 +18,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 13px;
+  margin-top: 10px;
 }
 
 .cat__text {
@@ -55,7 +52,7 @@
   box-sizing: border-box;
 
   &:active {
-    color: rgba(0, 0, 0, 0.3)
+    color: rgba(0, 0, 0, 0.3);
   }
 
   &::before {
@@ -74,13 +71,12 @@
     border: 1px solid #bcbcbc;
   }
 
-  &:active::before{
+  &:active::before {
     opacity: 0.3;
   }
 }
 
-input[type=radio]:checked + .cat__information--radio {
-
+input[type="radio"]:checked + .cat__information--radio {
   &::after {
     content: "";
     position: absolute;
@@ -102,7 +98,6 @@ input[type=radio]:checked + .cat__information--radio {
 }
 
 @media (min-width: $tablet-width) {
-
   .cat__information {
     padding: 0 37px 0 39px;
   }
@@ -127,8 +122,6 @@ input[type=radio]:checked + .cat__information--radio {
   .cat__information--border {
     border: 1px solid #e6e6e6;
     margin: 53px 37px 75px 40px;
-    padding-top: 24px;
-    padding-left: 85px;
     padding: 24px 40px 10px 85px;
   }
 
@@ -141,25 +134,22 @@ input[type=radio]:checked + .cat__information--radio {
       width: 38px;
       height: 38px;
       border-radius: 50%;
-      top: 0px;
+      top: 0;
       left: -59px;
     }
   }
 
-  input[type=radio]:checked + .cat__information--radio {
-
+  input[type="radio"]:checked + .cat__information--radio {
     &::after {
       top: 11px;
       left: -48px;
       width: 18px;
       height: 18px;
-
     }
   }
 }
 
 @media (min-width: $desktop-width) {
-
   .cat__text--wrapper {
     margin-top: 0;
     margin-bottom: 20px;
@@ -172,12 +162,7 @@ input[type=radio]:checked + .cat__information--radio {
     margin-bottom: 49px;
   }
 
-  .cat__information {
-    box-sizing: border-box;
-    padding: 0;
-  }
-
-   .cat__information--border {
+  .cat__information--border {
     padding: 24px 42px 11px 86px;
     margin: 0;
   }
@@ -185,13 +170,11 @@ input[type=radio]:checked + .cat__information--radio {
   .cat__information {
     box-sizing: border-box;
     margin: 0;
-
+    padding: 0;
   }
 
-  .cat__information--wrapper{
+  .cat__information--wrapper {
     width: 50%;
     padding: 0 40px 0 41px;
   }
-
 }
-

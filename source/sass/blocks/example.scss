@@ -17,7 +17,7 @@
 }
 
 .example__text {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   display: block;
   padding-right: 10px;
   margin-bottom: 25px;
@@ -57,7 +57,7 @@
 
 .value-text {
   position: absolute;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 12px;
   line-height: 12px;
   width: 60px;
@@ -75,7 +75,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .example__wrapper {
     background-color: #ffffff;
     padding-left: 30px;
@@ -148,10 +147,9 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .example {
     background-color: transparent;
-    width: 100%;;
+    width: 100%;
   }
 
   .example__container {
@@ -168,9 +166,8 @@
       width: 100%;
       height: 460px;
       left: 0;
-      bottom: 0px;
-      background-image: linear-gradient(to right,#f2f2f2 0,#f2f2f2 calc(100% - 378px),
-      #e9e9e9 calc(100% - 378px),#e9e9e9 100%);
+      bottom: 0;
+      background-image: linear-gradient(to right, #f2f2f2 0, #f2f2f2 calc(100% - 378px), #e9e9e9 calc(100% - 378px), #e9e9e9 100%);
       z-index: -1;
     }
   }
@@ -183,7 +180,7 @@
   }
 
   .example__title {
-     margin-bottom: 73px;
+    margin-bottom: 73px;
   }
 
   .example__text {

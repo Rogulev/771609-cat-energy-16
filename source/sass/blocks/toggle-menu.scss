@@ -50,7 +50,7 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .toggle-menu +.main-nav {
+  .toggle-menu + .main-nav {
     display: none;
   }
 
@@ -64,7 +64,7 @@
 }
 
 @media (min-width: $tablet-width) {
-    .toggle-menu {
+  .toggle-menu {
     display: none;
   }
 }

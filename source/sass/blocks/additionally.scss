@@ -74,7 +74,7 @@
   outline: 1px solid #bababa;
 }
 
-input[type=checkbox]:checked + .additionally__text::after {
+input[type="checkbox"]:checked + .additionally__text::after {
   content: "";
   position: absolute;
   width: 10px;
@@ -87,9 +87,8 @@ input[type=checkbox]:checked + .additionally__text::after {
 }
 
 @media (min-width: $tablet-width) {
-
   .additionally-wrapper {
-   margin: 0 0 28px 0;
+    margin: 0 0 28px 0;
   }
 
   .additionally__container {
@@ -113,7 +112,7 @@ input[type=checkbox]:checked + .additionally__text::after {
 
     &::before {
       top: 23px;
-    };
+    }
 
     &::after {
       content: "";
@@ -140,7 +139,7 @@ input[type=checkbox]:checked + .additionally__text::after {
     }
   }
 
-  input[type=checkbox]:checked + .additionally__text::after {
+  input[type="checkbox"]:checked + .additionally__text::after {
     width: 10px;
     height: 20px;
     border-right: 1px solid $master-color;
@@ -152,7 +151,6 @@ input[type=checkbox]:checked + .additionally__text::after {
 }
 
 @media (min-width: $desktop-width) {
-
   .additionally__title {
     padding-left: 39px;
   }

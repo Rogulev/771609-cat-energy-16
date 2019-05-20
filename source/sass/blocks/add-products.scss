@@ -28,7 +28,7 @@
 }
 
 .add-products__promo {
-    display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 290px;
@@ -40,12 +40,11 @@
   background-color: $master-color;
 }
 
-@media
-  (min-resolution: 144dpi),
+@media (min-resolution: 144dpi),
   (min-resolution: 1.5dppx) {
-    .add-products__promo {
-      background-image: url("../../img/gift-photo-mobile@2x.jpg");
-    }
+  .add-products__promo {
+    background-image: url("../../img/gift-photo-mobile@2x.jpg");
+  }
 }
 
 .add-products__promo-img {
@@ -64,12 +63,11 @@
   color: #ffffff;
   font-size: 16px;
   line-height: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
-
   .add-products {
     padding-left: 30px;
     padding-right: 30px;
@@ -112,9 +110,8 @@
     justify-content: space-between;
   }
 
-  @media
-  (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx) {
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
     .add-products__promo {
       background-image: url("../../img/gift-photo-tablet@2x.jpg");
     }
@@ -135,12 +132,10 @@
     padding-top: 4px;
     padding-right: 112px;
     width: 170px;
-
   }
 }
 
 @media (min-width: $desktop-width) {
-
   .add-products {
     padding-left: 70px;
     padding-right: 70px;
@@ -164,9 +159,8 @@
     background-size: cover;
   }
 
-  @media
-  (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx) {
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
     .add-products__promo {
       background-image: url("../../img/gift-photo-desktop@2x.jpg");
     }
