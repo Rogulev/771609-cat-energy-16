@@ -17,9 +17,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 0 58px 0 63px;
   align-items: center;
-  width: 200px;
   padding: 32px 0 35px 0;
 }
 
@@ -30,6 +29,7 @@
   line-height: 20px;
   font-size: 16px;
   padding: 0;
+  cursor: pointer;
 }
 
 .comparison__progress-line {
@@ -58,9 +58,8 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .comparison__wrapper {
-    padding: 0 30px 40px 30px;
+    padding: 0 30px 45px 30px;
     position: relative;
     background-color: #ffffff;
 
@@ -75,10 +74,10 @@
     }
   }
 
-  .comparison-image {
+  .comparison__image {
     position: relative;
     height: 560px;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-left: 12px;
   }
 
@@ -100,7 +99,9 @@
 
   .comparison__slider {
     width: 570px;
-    padding-top: 17px;
+    padding-top: 13px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .comparison__progress-line {
@@ -118,11 +119,12 @@
     background-color: #ffffff;
     border-radius: 50%;
     border: 1px solid #dcdcdc;
-    bottom: -13px;
+    bottom: -15px;
     left: 200px;
     cursor: pointer;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.15);
 
-    &::after{
+    &::after {
       content: "";
       position: absolute;
       width: 8px;
@@ -131,23 +133,40 @@
       top: 12px;
       left: 12px;
     }
+
+    &:hover,
+    :focus {
+      box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.15);
+    }
+
+    &:active {
+      box-shadow: inset 0 0 0 2px $master-color;
+    }
   }
 
   .comparison__btn {
+    height: 30px;
     font-size: 20px;
     z-index: 1;
     cursor: pointer;
-    padding-bottom: 7px;
     border-bottom: 1px dotted #d9d9d9;
-  }
 
+    &:hover,
+    :focus {
+      border-bottom: 1px solid #d9d9d9;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
-
   .comparison__wrapper {
     margin-right: 0;
     margin-left: auto;
+    padding-bottom: 35px;
     background-color: inherit;
     width: 620px;
 
@@ -163,11 +182,13 @@
 
   .comparison__slider {
     margin-right: 10px;
+    margin-left: 40px;
+    padding-top: 14px;
   }
 
-  .comparison-image {
+  .comparison__image {
     margin-bottom: 20px;
-    margin-top: -60px;
+    margin-top: -65px;
     margin-left: 0;
     width: 100%;
     position: relative;

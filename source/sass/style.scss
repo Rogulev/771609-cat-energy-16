@@ -1,29 +1,26 @@
-@import "mixins.scss";
 @import "variables.scss";
 @import "global/scaffolding.scss";
 @import "global/font.scss";
-
 @import "blocks/visually-hidden.scss";
 @import "blocks/advantage.scss";
 @import "blocks/catalog.scss";
 @import "blocks/categories.scss";
 @import "blocks/food-programm.scss";
-@import "blocks/main-nav.scss";
 @import "blocks/navigation__link.scss";
 @import "blocks/page-main.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/page-header.scss";
 @import "blocks/product.scss";
-@import "blocks/wrapper.scss";
 @import "blocks/extra.scss";
 @import "blocks/add-products.scss";
 @import "blocks/example.scss";
 @import "blocks/comparison.scss";
 @import "blocks/cooperation.scss";
 @import "blocks/form.scss";
-@import "blocks/cat__information.scss";
-@import "blocks/cat__owner.scss";
+@import "blocks/cat.scss";
+@import "blocks/owner.scss";
 @import "blocks/comments.scss";
 @import "blocks/additionally.scss";
 @import "blocks/conclusion.scss";
-
+@import "blocks/social.scss";
+@import "blocks/toggle-menu.scss";

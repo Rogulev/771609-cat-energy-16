@@ -1,17 +1,17 @@
-.cat-owner__wrapper {
-  margin: 0 20px 13px 20px;
+.owner {
+  margin: 0 20px 13px 19px;
 }
 
-.cat-owner {
+.owner__wrapper {
   border: none;
   padding: 0;
   margin: 0;
 }
 
-.cat-owner__title {
+.owner__title {
   font-size: 24px;
   line-height: 24px;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
   position: relative;
   background-color: #ffffff;
   padding-right: 20px;
@@ -28,11 +28,12 @@
   }
 }
 
-.cat-owner__title span {
+.owner__title span {
   position: relative;
 }
 
-.cat-owner__container-text {
+.owner__container--text {
+  position: relative;
   font-size: 16px;
   text-transform: uppercase;
   margin: 0 0 14px 0;
@@ -41,51 +42,95 @@
   align-items: center;
 }
 
-.cat-owner__text {
-  flex-shrink: 0;
-  margin-right: 10px;
+.owner__container--box {
+  width: 100%;
 }
 
-.cat-owner__box {
+.owner__text {
+  flex-shrink: 0;
+  margin-right: 11px;
+}
+
+.owner__box {
   width: 100%;
   text-transform: uppercase;
-  padding: 13px 15px;
-  width: 100%;
+  padding: 13px 40px 13px 15px;
   border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #000000;
+
+
+    &:invalid {
+      outline: 2px solid #ff8282;
+    }
+  }
+}
+
+.owner__box:focus + .owner__icon {
+  fill: $master-color;
+}
+
+.owner__box:focus:invalid + .owner__icon {
+  fill: #ff8282;
+}
+
+.owner__icon--mail {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  right: 16px;
+  top: 33%;
+}
+
+.owner__icon--phone {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 13px;
+  top: 32%;
 }
 
 @media (min-width: $tablet-width) {
-
-  .cat-owner__wrapper {
+  .owner {
     margin: 0;
   }
 
-  .cat-owner {
+  .owner__wrapper {
     margin-bottom: 45px;
   }
 
-  .cat-owner__container {
-    margin: 0 36px 0 40px;
+  .owner__container {
+    margin: 0 36px 0 39px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  .cat-owner__container-text {
+  .owner__container--text {
     margin-bottom: 20px;
   }
 
-  .cat-owner__title {
+  .owner__container--text:nth-child(2) {
+    margin-left: -3px;
+  }
+
+  .owner__title {
     font-size: 36px;
     line-height: 36px;
-    padding-left: 38px;
+    padding-left: 37px;
     padding-right: 42px;
     margin-bottom: 77px;
     width: 600px;
 
     &::before {
       top: 23px;
-    };
+    }
 
     &::after {
       content: "";
@@ -99,14 +144,15 @@
     }
   }
 
-  .cat-owner__text {
+  .owner__text {
     margin-right: 20px;
     font-size: 20px;
     line-height: 20px;
   }
 
 
-  .cat-owner__box {
+  .owner__box {
+    height: 52px;
     font-size: 20px;
     line-height: 20px;
     padding: 10px 15px 10px 19px;
@@ -115,22 +161,39 @@
   .text-tel {
     margin-right: 15px;
   }
+
+  .owner__icon--mail {
+    right: 20px;
+  }
+
+  .owner__icon--phone {
+    right: 17px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .owner__wrapper {
+    margin-bottom: 48px;
+  }
 
-  .cat-owner__title {
-    margin-bottom: 75px;
+  .owner__title {
+    margin-bottom: 76px;
+    padding-left: 39px;
     max-width: 595px;
-   }
+  }
 
-  .cat-owner__container {
+  .owner__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0 39px 0 40px;
   }
 
-  .cat-owner__container-text {
-    width: 46.7%;
+  .owner__container--text {
+    width: 46.8%;
+  }
+
+  .owner__icon--phone {
+    right: 20px;
   }
 }
