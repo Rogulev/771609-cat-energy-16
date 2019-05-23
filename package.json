@@ -8,7 +8,7 @@
     "autoprefixer": "9.5.x",
     "browser-sync": "2.26.x",
     "del": "^3.0.0",
-    "gulp": "3.9.x",
+    "gulp": "4.0.x",
     "gulp-csso": "^3.0.1",
     "gulp-htmlmin": "^4.0.0",
     "gulp-imagemin": "^4.1.0",
@@ -17,6 +17,7 @@
     "gulp-posthtml": "^3.0.4",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "4.0.x",
+    "gulp-sourcemaps": "^2.6.5",
     "gulp-svgstore": "^6.1.1",
     "gulp-uglify": "^3.0.0",
     "gulp-webp": "^3.0.0",
@@ -29,7 +30,7 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp css",
+    "build": "gulp build",
     "start": "gulp start"
   },
   "browserslist": [

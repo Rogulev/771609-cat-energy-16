@@ -167,15 +167,15 @@ input[type="radio"]:checked + .cat__information--radio {
     margin-bottom: 49px;
   }
 
-  .cat__information--border {
-    padding: 24px 42px 11px 86px;
-    margin: 0;
-  }
-
   .cat__information--wrapper {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+  }
+
+  .cat__information--border {
+    padding: 24px 42px 11px 86px;
+    margin: 0;
   }
 
   .cat__information {
