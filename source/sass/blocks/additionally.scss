@@ -91,6 +91,10 @@ input[type="checkbox"]:checked + .additionally__text::after {
     margin: 0 0 28px 0;
   }
 
+  .additionally__wrapper {
+    margin: 0 30px;
+  }
+
   .additionally__container {
     display: flex;
     flex-direction: row;
@@ -154,7 +158,7 @@ input[type="checkbox"]:checked + .additionally__text::after {
 @media (min-width: $desktop-width) {
   .additionally__title {
     padding-left: 39px;
-    margin-bottom: 53px;
+    margin-bottom: 50px;
   }
 
   .additionally__container p {
@@ -163,6 +167,6 @@ input[type="checkbox"]:checked + .additionally__text::after {
   }
 
   .additionally {
-    margin-bottom: 35px;
+    margin: 0 40px 35px 40px;
   }
 }

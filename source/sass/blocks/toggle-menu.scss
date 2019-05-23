@@ -11,6 +11,10 @@
   border: none;
 }
 
+.toggle-menu--nojs {
+  display: none;
+}
+
 .toggle-menu::before {
   content: "";
   position: absolute;

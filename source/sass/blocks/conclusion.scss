@@ -27,7 +27,7 @@
   .conclusion {
     display: flex;
     flex-direction: row;
-    margin: 0 42px 48px 40px;
+    margin: 0 72px 48px 70px;
   }
 
 
@@ -47,7 +47,7 @@
 
 @media (min-width: $desktop-width) {
   .conclusion {
-    margin-bottom: 58px;
+    margin: 0 110px 58px 110px;
   }
 
   .conclusion__btn {
