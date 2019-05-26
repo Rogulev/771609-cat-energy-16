@@ -10,11 +10,14 @@
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css" type="text/css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
 <body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div> 
   <div class="wrapper">
     <header class="page-header">
       <a class="page-header__logo">
@@ -48,10 +51,11 @@
           <li class="categories__item">
             <h3 class="categories__item-title categories__item-title--diet">Похудение</h3>
             <p class="categories__item-description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-            </p> <a href="form.html" class="categories__link categories__link--slim"><span>Каталог Slim</span></a> </li>
+            </p> <a href="catalog.html" class="categories__link categories__link--slim"><span>Каталог Slim</span></a> </li>
           <li class="categories__item">
             <h3 class="categories__item-title categories__item-title--force">Набор массы</h3>
-            <p class="categories__item-description categories-up__item-description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы! </p> <a href="form.html" class="categories__link"><span>Каталог Pro</span></a> </li>
+            <p class="categories__item-description categories-up__item-description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы! </p>
+            <a href="catalog.html" class="categories__link"><span>Каталог Pro</span></a> </li>
         </ul>
       </section>
       <section class="advantage">
@@ -101,13 +105,13 @@
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
                   <source media="(min-width: 1280px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x"> <img class="cat-comparison cat--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Спортивный кот"> </picture>
+                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x"> <img class="cat-comparison cat--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Огромный кот"> </picture>
                 <picture>
                   <source type="image/webp" media="(min-width: 1280px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
                   <source media="(min-width: 1280px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x"> <img class="cat-comparison cat--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Огромный кот"> </picture>
+                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x"> <img class="cat-comparison cat--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Спортивный кот"> </picture>
               </div>
               <div class="comparison__slider">
                 <button class="comparison__btn">Было</button>
@@ -124,7 +128,7 @@
           <p class="cooperation__text">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </div>
         <div class="maps">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3018645192717!2d30.322273583684453!3d59.938717447795106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1556690621051!5m2!1sru!2sru" style="border:0" allowfullscreen=""></iframe>
+          <iframe class="maps__wrapper" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3018645192717!2d30.322273583684453!3d59.938717447795106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1556690621051!5m2!1sru!2sru" style="border:0" allowfullscreen=""></iframe>
         </div>
       </section>
     </main>
@@ -136,30 +140,31 @@
             <li class="social__item">
               <a href="https://vk.com/htmlacademy" class="social__link social__link--vkontakte"> <span class="visually-hidden">Мы в Вкнотакте</span>
                 <svg class="social__icon social__icon--vk">
-                  <use xlink:href="img/sprite.svg#icon-vk-mobile"></use>
+                  <use xlink:href="#icon-vk-mobile"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a href="https://www.instagram.com/htmlacademy" class="social__link social__link--instagram"> <span class="visually-hidden">Мы в Инстаграме</span>
                 <svg class="social__icon social__icon--inst">
-                  <use xlink:href="img/sprite.svg#icon-insta-mobile"></use>
+                  <use xlink:href="#icon-insta-mobile"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a href="https://www.facebook.com/htmlacademy" class="social__link social__link--facebook"> <span class="visually-hidden">Мы в Фейсбуке</span>
                 <svg class="social__icon social__icon--fb">
-                  <use xlink:href="img/sprite.svg#icon-fb-mobile"></use>
+                  <use xlink:href="#icon-fb-mobile"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright">
-          <a class="copyright__wrapper" href="https://htmlacademy.ru/intensive/adaptive"> <span class="copyright__text">HTML Academy</span>
-            <svg class="copyright__icon" width="40px" height="40px">
-              <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+          <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="copyright__text">HTML Academy</span>
+            <svg class="copyright__icon">
+              <use xlink:href="#icon-htmlacademy" ></use>
             </svg>
           </a>
         </div>
@@ -168,8 +173,8 @@
   </div>
   <script src="js/toggle-menu.js"></script>
   <script src="js/picturefill.min.js"></script>
-  <script src="js/svg4everybody.min.js"></script>
-  <script src="js/svg4everybody.legacy.min.js"></script>
+
+  
   <script src="js/svguse.js"></script>
 </body>
 

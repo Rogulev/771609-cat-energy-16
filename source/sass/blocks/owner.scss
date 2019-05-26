@@ -64,11 +64,10 @@
 
   &:focus {
     outline: 2px solid #000000;
+  }
 
-
-    &:invalid {
-      outline: 2px solid #ff8282;
-    }
+  &:invalid {
+    outline: 2px solid #ff8282;
   }
 }
 
@@ -76,7 +75,7 @@
   fill: $master-color;
 }
 
-.owner__box:focus:invalid + .owner__icon {
+.owner__box:invalid + .owner__icon {
   fill: #ff8282;
 }
 

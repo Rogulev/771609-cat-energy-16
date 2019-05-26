@@ -23,7 +23,7 @@
   width: 88%;
 }
 
-.copyright__wrapper {
+.copyright{
   padding: 18px 0 20px 0;
   text-decoration: none;
   width: 100%;
@@ -33,11 +33,11 @@
   align-items: center;
 }
 
-.copyright__wrapper:hover .copyright__icon {
+.copyright:hover .copyright__icon {
   fill: $master-color;
 }
 
-.copyright__wrapper:focus .copyright__icon {
+.copyright:focus .copyright__icon {
   fill: $master-color;
 }
 
@@ -84,7 +84,7 @@
     text-align: right;
   }
 
-  .copyright__wrapper {
+  .copyright{
     justify-content: flex-end;
   }
 

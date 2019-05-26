@@ -4,9 +4,9 @@
 }
 
 .food-programm {
-  background-image: url("../../img/index-background-mobile@1x.jpg");
-  background-repeat: repeat-x;
-  background-size: 320px 305px;
+  background-image: linear-gradient(to top,#fff 175px,transparent 175px),url(../img/index-background-mobile@1x.jpg);
+  background-color: #5eaa2f;
+  background-repeat: no-repeat;
   background-position: top center;
   display: flex;
   flex-direction: column;
@@ -17,7 +17,7 @@
 @media (min-resolution: 144dpi),
   (min-resolution: 1.5dppx) {
   .food-programm {
-    background-image: url("../../img/index-background-mobile@2x.jpg");
+    background-image: url("../img/index-background-mobile@2x.jpg");
   }
 }
 
@@ -73,6 +73,7 @@
     padding: 10px 30px 530px 28px;
     margin-bottom: 0;
     background-image: none;
+    background-color: transparent;
   }
 
   .food-programm__slogan {

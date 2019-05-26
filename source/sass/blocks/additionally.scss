@@ -70,10 +70,6 @@
   border: 1px solid #bababa;
 }
 
-.additionally__check:focus + .additionally__text {
-  outline: 1px solid #bababa;
-}
-
 input[type="checkbox"]:checked + .additionally__text::after {
   content: "";
   position: absolute;
