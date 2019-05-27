@@ -14,16 +14,11 @@
   border-bottom: 2px solid #e6e6e6;
 }
 
-.page-footer__social {
-  width: 88%;
-  border-bottom: 2px solid #e6e6e6;
-}
-
 .page-footer__copyright {
   width: 88%;
 }
 
-.copyright{
+.copyright {
   padding: 18px 0 20px 0;
   text-decoration: none;
   width: 100%;
@@ -72,19 +67,13 @@
     width: 23%;
   }
 
-  .page-footer__social {
-    border: none;
-    padding: 0 30px;
-    width: 23%;
-  }
-
   .page-footer__copyright {
     padding: 0 30px;
     width: 23%;
     text-align: right;
   }
 
-  .copyright{
+  .copyright {
     justify-content: flex-end;
   }
 

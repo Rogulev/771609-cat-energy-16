@@ -17,7 +17,7 @@
   margin-bottom: 28px;
 }
 
-.cat__text--wrapper {
+.cat__text {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -26,7 +26,7 @@
   margin-top: 10px;
 }
 
-.cat__text {
+.cat__text--wrapper {
   margin-right: 15px;
   display: inline-block;
   flex-shrink: 0;
@@ -48,7 +48,7 @@
   }
 }
 
-.cat__information--radio {
+.cat__radio {
   margin-bottom: 5px;
   padding: 10px 0;
   display: block;
@@ -81,7 +81,7 @@
   }
 }
 
-input[type="radio"]:checked + .cat__information--radio {
+input[type="radio"]:checked + .cat__radio {
   &::after {
     content: "";
     position: absolute;
@@ -98,7 +98,7 @@ input[type="radio"]:checked + .cat__information--radio {
   }
 }
 
-.cat__information--check:focus + .cat__information--radio::before {
+.cat__check:focus + .cat__radio::before {
   border: 1px solid #bcbcbc;
 }
 
@@ -107,13 +107,13 @@ input[type="radio"]:checked + .cat__information--radio {
     padding: 0 37px 0 39px;
   }
 
-  .cat__text--wrapper {
+  .cat__text {
     margin-bottom: 20px;
     font-size: 20px;
     line-height: 20px;
   }
 
-  .cat__text {
+  .cat__text--wrapper {
     margin-right: 16px;
   }
 
@@ -130,7 +130,7 @@ input[type="radio"]:checked + .cat__information--radio {
     padding: 24px 40px 10px 85px;
   }
 
-  .cat__information--radio {
+  .cat__radio {
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 13px;
@@ -144,7 +144,7 @@ input[type="radio"]:checked + .cat__information--radio {
     }
   }
 
-  input[type="radio"]:checked + .cat__information--radio {
+  input[type="radio"]:checked + .cat__radio {
     &::after {
       top: 11px;
       left: -48px;
@@ -155,7 +155,7 @@ input[type="radio"]:checked + .cat__information--radio {
 }
 
 @media (min-width: $desktop-width) {
-  .cat__text--wrapper {
+  .cat__text {
     margin-top: 0;
     margin-bottom: 20px;
   }

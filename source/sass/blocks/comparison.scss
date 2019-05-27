@@ -1,15 +1,15 @@
-.comparison {
+.comparison__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.cat-comparison {
+.comparison__cat {
   display: block;
   margin: 0 auto;
 }
 
-.cat--after {
+.comparison__cat--after {
   display: none;
 }
 
@@ -58,7 +58,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .comparison__wrapper {
+  .comparison {
     padding: 0 30px 45px 30px;
     position: relative;
     background-color: #ffffff;
@@ -81,18 +81,18 @@
     margin-left: 12px;
   }
 
-  .cat-comparison {
+  .comparison__cat {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
   }
 
-  .cat--before {
+  .comparison__cat--before {
     clip: rect(auto, 340px, auto, auto);
   }
 
-  .cat--after {
+  .comparison__cat--after {
     display: block;
     clip: rect(auto, auto, auto, 340px);
   }
@@ -163,7 +163,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .comparison__wrapper {
+  .comparison {
     margin-right: 0;
     margin-left: auto;
     padding-bottom: 35px;
@@ -175,7 +175,7 @@
     }
   }
 
-  .comparison {
+  .comparison__wrapper {
     margin-left: auto;
     text-align: right;
   }
@@ -195,11 +195,11 @@
     left: -40px;
   }
 
-  .cat--before {
+  .comparison__cat--before {
     clip: rect(auto, 365px, auto, auto);
   }
 
-  .cat--after {
+  .comparison__cat--after {
     clip: rect(auto, auto, auto, 365px);
   }
 }

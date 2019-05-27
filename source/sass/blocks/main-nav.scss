@@ -1,0 +1,128 @@
+.main-nav__list {
+  font-weight: 700;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__list-item {
+  list-style: none;
+  text-align: center;
+  min-height: 65px;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+  border-top: 1px solid #e6e6e6;
+
+  &:hover,
+  :focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__list-item:nth-last-child(1) {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.navigation__link {
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+
+  padding-top: 23px;
+  padding-bottom: 23px;
+  box-sizing: content-box;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav {
+    margin: 0 -20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .navigation__link {
+    padding: 20px 0 7px 0;
+    margin-left: 19px;
+    box-sizing: content-box;
+    position: relative;
+
+    &--active {
+      border-bottom: 2px solid $master-color;
+    }
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 460px;
+  }
+
+  .main-nav__list-item {
+    border: none;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+
+  .main-nav__list-item:nth-last-child(1) {
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list--image {
+    &::after {
+      content: "";
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-color: $master-color;
+      width: 50%;
+      background-size: cover;
+      height: 695px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
+
+    .navigation__link {
+      color: #ffffff;
+
+      &--active {
+        border-bottom: 2px solid #ffffff;
+      }
+    }
+  }
+
+
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .main-nav__list--image::after {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
+  }
+
+  .main-nav__list {
+    line-height: 25px;
+    width: 480px;
+  }
+
+  .main-nav__list-item {
+    font-size: 20px;
+  }
+
+  .navigation__link {
+    margin-left: 0;
+
+    &--active {
+      border-bottom: 2px solid $master-color;
+    }
+  }
+}
