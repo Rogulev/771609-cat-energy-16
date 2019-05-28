@@ -17,7 +17,8 @@
 @media (min-resolution: 144dpi),
   (min-resolution: 1.5dppx) {
   .food-programm {
-    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-image: linear-gradient(to top, #ffffff 175px, transparent 175px), url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
   }
 }
 
@@ -118,10 +119,10 @@
 
 @media (min-width: $desktop-width) {
   .food-programm {
-    margin-left: 105px;
-    padding-bottom: 270px;
-    padding-left: 85px;
     background-image: none;
+    width: 1300px;
+    padding: 0 0 270px 0;
+    margin: 0 auto;
   }
 
   .food-programm__image {
@@ -131,18 +132,18 @@
   }
 
   .food-programm__slogan {
-    margin-top: 65px;
-    margin-bottom: 41px;
+    margin: 75px 40px 41px 120px;
     padding-left: 0;
     z-index: 1;
   }
 
   .food-programm__intro {
     margin-bottom: 53px;
+    margin-left: 120px;
     padding-left: 0;
   }
 
   .food-programm__search {
-    margin-left: 0;
+    margin-left: 120px;
   }
 }

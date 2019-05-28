@@ -36,10 +36,14 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    margin: 0 70px;
+    margin: 0;
   }
 
   .catalog__list {
+    max-width: 1300px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: flex-start;
   }
 

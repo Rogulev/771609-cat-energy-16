@@ -33,6 +33,12 @@
   }
 }
 
+.social__link:active {
+  .social__icon {
+    opacity: 0.6;
+  }
+}
+
 .social__icon--vk {
   height: 13px;
   width: 22px;

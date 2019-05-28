@@ -30,7 +30,9 @@
   }
 
   .page-main__title {
+    max-width: 1300px;
+    box-sizing: border-box;
     padding: 40px 40px 30px 40px;
-    margin: 0 70px 23px 70px;
+    margin: 0 auto 23px auto;
   }
 }

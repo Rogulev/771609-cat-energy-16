@@ -71,11 +71,23 @@
     position: relative;
   }
 
+  .cooperation__container {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    margin: 95px 0 0 40px;
+  }
+
+  .cooperation__box {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .cooperation__wrapper {
     box-sizing: border-box;
-    position: absolute;
     top: 95px;
-    left: 110px;
+    left: 40px;
     width: 570px;
     min-height: 200px;
     padding: 64px 84px 25px 75px;

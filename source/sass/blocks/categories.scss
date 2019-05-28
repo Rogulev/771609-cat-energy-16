@@ -83,18 +83,21 @@
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-position: center;
-    width: 26px;
-    height: 12px;
-    top: calc(50% - 12px / 2);
-    left: 115px;
-    transition: all 0.2s ease;
+    background-size: 32px 11px;
+    width: 23px;
+    height: 11px;
+    top: 6px;
+    left: 117px;
+    transition: all 0.3s ease;
   }
 
   &:hover,
   &:focus {
     &::after {
       background-image: url("../img/icon-right-arrow-verylong.svg");
-      width: 35px;
+      width: 32px;
+      height: 12px;
+      top: 5px;
     }
   }
 
@@ -176,22 +179,28 @@
     padding-left: 0;
 
     &::after {
-      left: 125px;
+      left: 127px;
+      top: 10px;
     }
 
     & span {
       padding-right: 23px;
     }
+
+    &:hover::after {
+      top: 9px;
+    }
   }
 
   .categories__link--slim::after {
-    left: 130px;
+    left: 132px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .categories {
-    margin: 0 70px;
+    max-width: 1300px;
+    margin: 0 auto;
   }
 
   .categories__list {

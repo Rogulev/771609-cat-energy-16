@@ -79,19 +79,6 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__list--image {
-    &::after {
-      content: "";
-      background-image: url("../img/index-background-desktop@1x.jpg");
-      background-color: $master-color;
-      width: 50%;
-      background-size: cover;
-      height: 695px;
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: -1;
-    }
-
     .navigation__link {
       color: #ffffff;
 
@@ -100,7 +87,6 @@
       }
     }
   }
-
 
   @media (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {

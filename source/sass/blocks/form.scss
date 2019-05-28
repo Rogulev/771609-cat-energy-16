@@ -35,16 +35,23 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .form__choice {
-    padding: 0 70px 0 70px;
+    padding: 0;
   }
 
   .form__title {
-    margin: 70px 30px 55px 110px;
+    margin: 70px 40px 55px 40px;
   }
 
   .form__text {
-    margin-left: 70px;
+    margin-left: 40px;
+    padding-left: 0;
     margin-bottom: 65px;
   }
 }

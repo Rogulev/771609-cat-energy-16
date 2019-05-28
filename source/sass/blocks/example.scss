@@ -82,16 +82,7 @@
 @media (min-width: $desktop-width) {
   .example {
     background-color: transparent;
-    width: 100%;
-  }
-
-  .example__container {
-    padding: 0 70px;
     position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: transparent;
 
     &::before {
       content: "";
@@ -100,14 +91,26 @@
       height: 460px;
       left: 0;
       bottom: 0;
-      background-image: linear-gradient(to right, #f2f2f2 0, #f2f2f2 calc(100% - 395px), #e9e9e9 calc(100% - 395px), #e9e9e9 100%);
+      background-image: linear-gradient(to right, #f2f2f2 0, #f2f2f2 calc(100% - 30%), #e9e9e9 calc(100% - 30%), #e9e9e9 100%);
       z-index: -1;
     }
   }
 
+  .example__container {
+    max-width: 1300px;
+    padding: 0 40px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+    box-sizing: border-box;
+  }
+
   .example__wrapper {
-    padding: 0 25px 0 40px;
-    width: 33.5%;
+    padding: 0 25px 0 0;
+    width: 36%;
     min-width: 415px;
     background-color: transparent;
   }
